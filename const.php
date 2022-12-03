@@ -1,13 +1,5 @@
 <?php
-session_start();
-try
-{
-    $mysqlConnection = new PDO('mysql:host=fournierfamily.ovh;port=15621;dbname=OmnesSante;charset=utf8','jps','poojava',array(PDO::ATTR_PERSISTENT => TRUE));
-}
-catch(Exception $e)
-{
-    die('Erreur :' . $e->getMessage());
-}
+
 $imgCarrousel = [
     [
         "img" => "images/Decor/Medecins.png",
@@ -61,4 +53,3 @@ $imgSpe = [
         "img" => "images/Specialistes/Yves_Remor.jpg",
     ],
 ];
-?>
